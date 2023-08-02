@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+:root {
+  /* background gradient */
+  --soft-violet: hsl(273, 75%, 66%);
+  --soft-blue: hsl(240, 73%, 65%);
+  /* primary text */
+  --very-dark-desaturated-blue: hsl(238, 29%, 16%);
+  --soft-red: hsl(14, 88%, 65%);
+  /* neutral text */
+  --very-dark-grayish-blue: hsl(237, 12%, 33%);
+  --dark-grayish-blue: hsl(240, 6%, 50%);
+  /* dividers */
+  --light-grayish-blue: hsl(240, 5%, 91%);
+}
+
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  background-color: var(--dark_blue);
+  min-height: 100vh;
+  font-size: 1.2rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(var(--soft-violet), var(--soft-blue));
+}
+
+.main-container {
+  display: grid;
+  margin: 40% auto 30%;
+  padding: 11.7em 2em 4.1em;
+  background-color: white;
+  width: 86%;
+  position: relative;
+  border-radius: 2rem;
+  box-shadow: 0px 30px 30px rgba(0, 0, 0, 0.205);
+}
+
+.image-background__container {
+  background-image: url(./images/bg-pattern-mobile.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: -13em;
+}
+
+.image-picture__container {
+  max-width: 20.4em;
+  position: absolute;
+  top: -9.2em;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+}
+
+img.box__img {
+  display: none;
+}
+
+/* accordion */
+.accordion-header {
+  font-size: 2.8rem;
+  text-align: center;
+  padding-bottom: 1.45em;
+}
+
+.accordion-title {
+  padding-bottom: 1.5em;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  color: var(--very-dark-grayish-blue);
+}
+
+.accordion-title:hover {
+  color: var(--soft-red);
+}
+
+.accordion-card input {
+  display: none;
+}
+
+.accordion-card .accordion-body {
+  display: none;
+}
+
+input:checked ~ .accordion-body {
+  display: block;
+}
+
+.accordion-body {
+  color: var(--dark-grayish-blue);
+  padding-bottom: 1.65em;
+  line-height: 1.8rem;
+}
+
+.accordion-divider {
+  height: 1px;
+  width: 100%;
+  background-color: var(--light-grayish-blue);
+  margin-bottom: 1.65em;
+}
+
+input:checked ~ .accordion-title {
+  color: black;
+  font-weight: 700;
+}
+
+input:checked + .accordion-title .dropdown-icon {
+  transform: rotate(180deg);
+}
+
+/* footer */
+.attribution {
+  position: absolute;
+  bottom: 1.65em;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 500px) {
+  .main-container {
+    margin: 30% auto;
+    height: 46em;
+  }
+}
+
+@media (min-width: 600px) {
+  .main-container {
+    margin: 23% auto;
+  }
+}
+
+@media (min-width: 850px) {
+  .main-container {
+    grid-template-columns: 1.5fr 2fr;
+    margin: 15% auto;
+    padding: 0;
+    width: 90%;
+  }
+
+  .accordion-header {
+    font-size: 3.2rem;
+    text-align: left;
+    padding-bottom: 1.25em;
+  }
+
+  .accordion-title {
+    font-size: 1.4rem;
+    padding-bottom: 1.1em;
+  }
+
+  .accordion {
+    padding: 12% 17% 14% 15%;
+  }
+
+  .image-picture__container {
+    max-width: inherit;
+    overflow: hidden;
+    display: block;
+    position: relative;
+    top: 50%;
+    margin-top: -15em;
+  }
+
+  .illustration__img {
+    margin-left: -6.35em;
+  }
+
+  .image-background__container {
+    background-image: url(./images/bg-pattern-desktop.svg);
+    background-repeat: no-repeat;
+    background-position-y: 68%;
+    background-position-x: right;
+    background-size: 243%;
+    margin: 0;
+    position: relative;
+    width: 33.5em;
+  }
+
+  .illustration__img {
+    width: 39.4em;
+  }
+
+  img.box__img {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: -7.6em;
+    margin-top: -4.2em;
+  }
+}
+
+@media (min-width: 1200px) {
+  .main-container {
+    width: 68%;
+    margin: 9% auto;
+  }
+}

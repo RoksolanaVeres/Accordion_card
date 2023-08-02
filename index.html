@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Frontend Mentor | FAQ Accordion Card</title>
+  </head>
+  <body>
+    <main class="main-container">
+      <div class="image-background__container">
+        <div class="image-picture__container">
+          <picture>
+            <source
+              srcset="./images/illustration-woman-online-desktop.svg"
+              media="(min-width: 850px)"
+            />
+            <img
+              class="illustration__img"
+              src="./images/illustration-woman-online-mobile.svg"
+              alt="woman online"
+            />
+          </picture>
+        </div>
+        <img
+          class="box__img"
+          src="./images/illustration-box-desktop.svg"
+          alt="box with email sign"
+        />
+      </div>
+
+      <div class="accordion">
+        <h1 class="accordion-header">FAQ</h1>
+
+        <div class="accordion-card">
+          <input type="radio" name="question" id="members-number" />
+          <label for="members-number" class="accordion-title"
+            >How many team members can I invite?
+            <div class="accordion-dropdown-icon">
+              <img
+                src="./images/icon-arrow-down.svg"
+                alt="dropdown icon"
+                class="dropdown-icon"
+              />
+            </div>
+          </label>
+
+          <div class="accordion-body">
+            You can invite up to 2 additional users on the Free plan. There is
+            no limit on team members for the Premium plan.
+          </div>
+          <div class="accordion-divider"></div>
+        </div>
+
+        <div class="accordion-card">
+          <input type="radio" name="question" id="file-size" />
+          <label for="file-size" class="accordion-title"
+            >What is the maximum file upload size?
+            <div class="accordion-dropdown-icon">
+              <img
+                src="./images/icon-arrow-down.svg"
+                alt="dropdown icon"
+                class="dropdown-icon"
+              />
+            </div>
+          </label>
+
+          <div class="accordion-body">
+            No more than 2GB. All files in your account must fit your allotted
+            storage space.
+          </div>
+          <div class="accordion-divider"></div>
+        </div>
+
+        <div class="accordion-card">
+          <input type="radio" name="question" id="reset-password" />
+          <label for="reset-password" class="accordion-title"
+            >How do I reset my password?
+            <div class="accordion-dropdown-icon">
+              <img
+                src="./images/icon-arrow-down.svg"
+                alt="dropdown icon"
+                class="dropdown-icon"
+              />
+            </div>
+          </label>
+
+          <div class="accordion-body">
+            Click “Forgot password” from the login page or “Change password”
+            from your profile page. A reset link will be emailed to you.
+          </div>
+          <div class="accordion-divider"></div>
+        </div>
+
+        <div class="accordion-card">
+          <input type="radio" name="question" id="cancel-subscription" />
+          <label for="cancel-subscription" class="accordion-title"
+            >Can I cancel my subscription?
+            <div class="accordion-dropdown-icon">
+              <img
+                src="./images/icon-arrow-down.svg"
+                alt="dropdown icon"
+                class="dropdown-icon"
+              />
+            </div>
+          </label>
+
+          <div class="accordion-body">
+            Yes! Send us a message and we’ll process your request no questions
+            asked.
+          </div>
+          <div class="accordion-divider"></div>
+        </div>
+
+        <div class="accordion-card">
+          <input type="radio" name="question" id="additional-support" />
+          <label for="additional-support" class="accordion-title"
+            >Do you provide additional support?
+            <div class="accordion-dropdown-icon">
+              <img
+                src="./images/icon-arrow-down.svg"
+                alt="dropdown icon"
+                class="dropdown-icon"
+              />
+            </div>
+          </label>
+
+          <div class="accordion-body">
+            Chat and email support is available 24/7. Phone lines are open
+            during normal business hours.
+          </div>
+          <div class="accordion-divider"></div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://www.frontendmentor.io/profile/RoksolanaVeres"
+        >Roksolana Veres</a
+      >.
+    </footer>
+  </body>
+</html>
