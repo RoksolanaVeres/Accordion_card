@@ -139,6 +139,10 @@ input:checked + .accordion-title .dropdown-icon {
     margin: 30% auto;
     height: 46em;
   }
+
+  .accordion {
+    height: inherit;
+  }
 }
 
 @media (min-width: 600px) {
